@@ -6,28 +6,6 @@ st.set_page_config(
     layout="wide"
 )
 
-<<<<<<< HEAD
-st.title("Minimum Daily Census")
-
-powerbi_url = (
-    "https://app.fabric.microsoft.com/reportEmbed?reportId=38adb732-64dd-4118-8b96-918d707e2861&autoAuth=true&ctid=1d7fd1ec-e7be-4f61-939a-8731f58950e5"
-    "https://app.fabric.microsoft.com/reportEmbed?reportId=acc5494b-81e4-4de4-b3a2-314bce556ea1&autoAuth=true&ctid=1d7fd1ec-e7be-4f61-939a-8731f58950e5"
-)
-
-components.html(
-    f"""
-    <iframe
-        width="100%"
-        height="800"
-        src="{powerbi_url}"
-        frameborder="0"
-        allowFullScreen="true">
-    </iframe>
-    """,
-    height=820,
-    scrolling=False
-)
-=======
 # Report URLs
 powerbi_url_1 = (
     "https://app.fabric.microsoft.com/reportEmbed?"
@@ -65,7 +43,7 @@ if st.session_state.selected_report is None:
 
     with col2:
         if st.button(
-            "📊ASLLC Daily Census Reports for Governing Facilities",
+            "📊 ASLLC Daily Census Reports for Governing Facilities",
             use_container_width=True
         ):
             st.session_state.selected_report = 2
@@ -116,4 +94,3 @@ elif st.session_state.selected_report == 2:
         height=820,
         scrolling=False
     )
->>>>>>> 1bdb59a (New View Added)
