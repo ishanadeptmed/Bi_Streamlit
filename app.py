@@ -9,6 +9,7 @@ st.set_page_config(
 st.title("Minimum Daily Census")
 
 powerbi_url = (
+    "https://app.fabric.microsoft.com/reportEmbed?reportId=38adb732-64dd-4118-8b96-918d707e2861&autoAuth=true&ctid=1d7fd1ec-e7be-4f61-939a-8731f58950e5"
     "https://app.fabric.microsoft.com/reportEmbed?reportId=acc5494b-81e4-4de4-b3a2-314bce556ea1&autoAuth=true&ctid=1d7fd1ec-e7be-4f61-939a-8731f58950e5"
 )
 
